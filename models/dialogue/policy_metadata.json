@@ -1,0 +1,32 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "item",
+        "time"
+      ]
+    },
+    "null": {
+      "slots": [
+        "item",
+        "time"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_thanks": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.8.2",
+  "max_history": 2,
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "__main__.MobilePolicy"
+  ]
+}
