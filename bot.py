@@ -20,13 +20,13 @@ import params
 
 logger = logging.getLogger(__name__)
 
-support_search = ["消费", "流量"]
+support_search = ["日志"]
 
 
 def extract_item(item):
     """
     check if item supported, this func just for lack of train data.
-    :param item: item in track, eg: "流量"、"查流量"
+    :param item: item in track, eg: "日志"
     :return:
     """
     if item is None:
@@ -36,29 +36,29 @@ def extract_item(item):
             return name
     return None
 
-
-class ActionSearchConsume(Action):
+class ActionLogDateConsume(Action):
     def name(self):
-        return 'action_search_consume'
+        return 'action_log_date_consume'
 
     def run(self, dispatcher, tracker, domain):
         item = tracker.get_slot("item")
         item = extract_item(item)
         if item is None:
-            dispatcher.utter_message("您好，我现在只会查话费和流量")
-            dispatcher.utter_message("你可以这样问我：“帮我查话费”")
+            dispatcher.utter_message("你好,请按格式输入想要查询的时间,目前只支持查询某一天的日志")
+            dispatcher.utter_message("比如,你可以这样回答：“2018.01.01”")
             return []
 
-        time = tracker.get_slot("time")
-        if time is None:
-            dispatcher.utter_message("您想查询哪个月的消费？")
+        date = tracker.get_slot("date")
+        if date is None:
+            dispatcher.utter_message("请问要查询哪一天的日志,请按格式输入想要查询的时间,目前只支持查询某一天的日志")
+            dispatcher.utter_message("比如,你可以这样回答：“2018.01.01”")
             return []
         # query database here using item and time as key. but you may normalize time format first.
         dispatcher.utter_message("好，请稍等")
-        if item == "流量":
-            dispatcher.utter_message("您好，您{}共使用{}二百八十兆，剩余三十兆。".format(time, item))
+        if item == "日志":
+            dispatcher.utter_message("您好，该天{}的{}为:厉害!".format(date, item))
         else:
-            dispatcher.utter_message("您好，您{}共消费二十八元。".format(time))
+            dispatcher.utter_message("您好,您是要查询日志吗?".format(date))
         return []
 
 

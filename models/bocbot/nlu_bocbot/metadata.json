@@ -13,9 +13,9 @@
     "mitie_feature_extractor_fingerprint": 1810187658478185215,
     "mitie_file": "data/total_word_feature_extractor_zh.dat",
     "entity_extractor_mitie": "entity_extractor.dat",
-    "entity_synonyms": "entity_synonyms.json",
+    "entity_synonyms": null,
     "regex_featurizer": null,
     "intent_classifier_sklearn": "intent_classifier.pkl",
-    "trained_at": "20180306-213627",
+    "trained_at": "20180308-150403",
     "rasa_nlu_version": "0.10.6"
 }

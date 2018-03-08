@@ -2,24 +2,14 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "item",
-        "time"
+        "date",
+        "item"
       ]
     },
     "null": {
       "slots": [
-        "item",
-        "time"
+        "item"
       ]
-    },
-    "utter_goodbye": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_thanks": {
-      "slots": []
     }
   },
   "rasa_core": "0.8.2",
