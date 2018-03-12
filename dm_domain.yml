@@ -1,8 +1,12 @@
 intents:
-  - utter_greet
+  - greet
   - log_search
   - inform_date
-  - utter_ask_log_time
+  - confirm
+  - unknown_intent
+  - goodbye
+  - deny
+  - thanks
 
 slots:
   item:
@@ -20,14 +24,34 @@ templates:
     *查询日志\n
     *查询...\n
     请输入你要的工作,比如“查日志”"
+  utter_inform_date:
+    - "你好,请按格式输入想要查询的时间,目前只支持查询某一天的日志.\n
+    比如,你可以这样回答：“2018.01.01”"
   utter_goodbye:
     - "再见，为您服务很开心"
     - "Bye， 下次再见"
-  utter_ask_log_time:
-    - "你好,请按格式输入想要查询的时间,目前只支持查询某一天的日志.\n
-    比如,你可以这样回答：“2018.01.01”"
+  utter_ask_more_help:
+    - "还有什么能帮您吗?我现在支持的功能如下:\n
+    *查询日志\n
+    *查询...\n
+    请输入你要的工作,比如“查日志”"
+  utter_unknown_intent:
+    - "你好，我目前只支持如下功能:\n
+    *查询日志\n
+    *查询...\n
+    请输入你要的工作,比如“查日志”"
+  utter_confirm:
+    - "还有其它可以帮到你的吗?"
+  utter_thanks:
+    - "不用谢"
+    - "我应该做的"
+    - "您开心我就开心"
 
 actions:
   - utter_greet
-  - utter_ask_log_time
+  - utter_inform_date
+  - utter_goodbye
+  - utter_ask_more_help
+  - utter_unknown_intent
+  - utter_confirm
   - bot.ActionLogDateConsume
