@@ -55,3 +55,4 @@ actions:
   - utter_unknown_intent
   - utter_confirm
   - bot.ActionLogDateConsume
+  - bot.ActionFinishConversation

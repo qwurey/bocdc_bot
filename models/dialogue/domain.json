@@ -1,0 +1,26 @@
+{
+  "features": [
+    "intent_greet",
+    "intent_log_search",
+    "intent_inform_date",
+    "intent_confirm",
+    "intent_unknown_intent",
+    "intent_goodbye",
+    "intent_deny",
+    "intent_thanks",
+    "entity_item",
+    "entity_date",
+    "slot_date_0",
+    "slot_item_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_utter_inform_date",
+    "prev_utter_goodbye",
+    "prev_utter_ask_more_help",
+    "prev_utter_unknown_intent",
+    "prev_utter_confirm",
+    "prev_action_log_date_consume",
+    "prev_action_finish_conversation"
+  ]
+}

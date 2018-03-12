@@ -1,0 +1,59 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_inform_date
+- utter_goodbye
+- utter_ask_more_help
+- utter_unknown_intent
+- utter_confirm
+- action_log_date_consume
+- action_finish_conversation
+actions:
+- utter_greet
+- utter_inform_date
+- utter_goodbye
+- utter_ask_more_help
+- utter_unknown_intent
+- utter_confirm
+- bot.ActionLogDateConsume
+- bot.ActionFinishConversation
+config:
+  store_entities_as_slots: true
+entities:
+- item
+- date
+intents:
+- greet
+- log_search
+- inform_date
+- confirm
+- unknown_intent
+- goodbye
+- deny
+- thanks
+slots:
+  date:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  item:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_more_help:
+  - text: "还有什么能帮您吗?我现在支持的功能如下:\n *查询日志\n *查询...\n 请输入你要的工作,比如“查日志”"
+  utter_confirm:
+  - text: 还有其它可以帮到你的吗?
+  utter_goodbye:
+  - text: 再见，为您服务很开心
+  - text: Bye， 下次再见
+  utter_greet:
+  - text: "你好，我是智能机器人小白，我现在支持的功能如下:\n *查询日志\n *查询...\n 请输入你要的工作,比如“查日志”"
+  utter_inform_date:
+  - text: "你好,请按格式输入想要查询的时间,目前只支持查询某一天的日志.\n 比如,你可以这样回答：“2018.01.01”"
+  utter_thanks:
+  - text: 不用谢
+  - text: 我应该做的
+  - text: 您开心我就开心
+  utter_unknown_intent:
+  - text: "你好，我目前只支持如下功能:\n *查询日志\n *查询...\n 请输入你要的工作,比如“查日志”"
+topics: []

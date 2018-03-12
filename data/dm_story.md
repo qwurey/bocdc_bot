@@ -13,7 +13,7 @@
     - utter_confirm
 * goodbye
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 2
@@ -31,7 +31,7 @@
     - utter_confirm
 * deny
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 3
@@ -47,7 +47,7 @@
     - utter_confirm
 * goodbye
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 4
@@ -63,7 +63,7 @@
     - utter_confirm
 * deny
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 5
@@ -81,7 +81,7 @@
     - utter_confirm
 * deny
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 6
@@ -99,7 +99,7 @@
     - utter_confirm
 * goodbye
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 7
@@ -117,7 +117,7 @@
     - utter_unknown_intent
 * deny
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 8
@@ -135,7 +135,7 @@
     - utter_unknown_intent
 * goodbye
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 5
@@ -143,7 +143,7 @@
     - utter_unknown_intent
 * goodbye
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 9
@@ -167,7 +167,7 @@
     - utter_ask_more_help
 * goodbye
     - utter_goodbye
-    - export
+    - action_finish_conversation
 
 
 ## Generated Story 10
@@ -191,4 +191,4 @@
     - utter_ask_more_help
 * deny
     - utter_goodbye
-    - export
+    - action_finish_conversation

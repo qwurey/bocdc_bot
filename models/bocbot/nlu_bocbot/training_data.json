@@ -2,7 +2,6 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "text": "查日志",
         "intent": "log_search",
         "entities": [
           {
@@ -11,10 +10,10 @@
             "value": "日志",
             "entity": "item"
           }
-        ]
+        ],
+        "text": "查日志"
       },
       {
-        "text": "查询日志",
         "intent": "log_search",
         "entities": [
           {
@@ -23,10 +22,10 @@
             "value": "日志",
             "entity": "item"
           }
-        ]
+        ],
+        "text": "查询日志"
       },
       {
-        "text": "帮我查日志",
         "intent": "log_search",
         "entities": [
           {
@@ -35,10 +34,10 @@
             "value": "日志",
             "entity": "item"
           }
-        ]
+        ],
+        "text": "帮我查日志"
       },
       {
-        "text": "查一下日志",
         "intent": "log_search",
         "entities": [
           {
@@ -47,10 +46,10 @@
             "value": "日志",
             "entity": "item"
           }
-        ]
+        ],
+        "text": "查一下日志"
       },
       {
-        "text": "帮我查一下昨天的日志",
         "intent": "log_search",
         "entities": [
           {
@@ -65,10 +64,10 @@
             "value": "昨天",
             "entity": "date"
           }
-        ]
+        ],
+        "text": "帮我查一下昨天的日志"
       },
       {
-        "text": "查询一下日志",
         "intent": "log_search",
         "entities": [
           {
@@ -77,10 +76,10 @@
             "value": "日志",
             "entity": "item"
           }
-        ]
+        ],
+        "text": "查询一下日志"
       },
       {
-        "text": "我要查询日志",
         "intent": "log_search",
         "entities": [
           {
@@ -89,10 +88,10 @@
             "value": "日志",
             "entity": "item"
           }
-        ]
+        ],
+        "text": "我要查询日志"
       },
       {
-        "text": "我要查日志",
         "intent": "log_search",
         "entities": [
           {
@@ -101,10 +100,10 @@
             "value": "日志",
             "entity": "item"
           }
-        ]
+        ],
+        "text": "我要查日志"
       },
       {
-        "text": "2018.01.05",
         "intent": "inform_date",
         "entities": [
           {
@@ -113,10 +112,10 @@
             "value": "2018.01.05",
             "entity": "date"
           }
-        ]
+        ],
+        "text": "2018.01.05"
       },
       {
-        "text": "2017.12.23",
         "intent": "inform_date",
         "entities": [
           {
@@ -125,218 +124,221 @@
             "value": "2017.12.23",
             "entity": "date"
           }
-        ]
+        ],
+        "text": "2017.12.23"
       },
       {
-        "text": "嗯",
         "intent": "confirm",
-        "entities": []
+        "entities": [],
+        "text": "嗯"
       },
       {
-        "text": "好的",
         "intent": "confirm",
-        "entities": []
+        "entities": [],
+        "text": "好的"
       },
       {
-        "text": "行",
         "intent": "confirm",
-        "entities": []
+        "entities": [],
+        "text": "行"
       },
       {
-        "text": "可以的",
         "intent": "confirm",
-        "entities": []
+        "entities": [],
+        "text": "可以的"
       },
       {
-        "text": "恩",
         "intent": "confirm",
-        "entities": []
+        "entities": [],
+        "text": "恩"
       },
       {
-        "text": "恩恩",
         "intent": "confirm",
-        "entities": []
+        "entities": [],
+        "text": "恩恩"
       },
       {
-        "text": "嗯嗯",
         "intent": "confirm",
-        "entities": []
+        "entities": [],
+        "text": "嗯嗯"
       },
       {
-        "text": "你好",
         "intent": "greet",
-        "entities": []
+        "entities": [],
+        "text": "你好"
       },
       {
-        "text": "你好啊",
         "intent": "greet",
-        "entities": []
+        "entities": [],
+        "text": "你好啊"
       },
       {
-        "text": "您好",
         "intent": "greet",
-        "entities": []
+        "entities": [],
+        "text": "您好"
       },
       {
-        "text": "hi",
         "intent": "greet",
-        "entities": []
+        "entities": [],
+        "text": "hi"
       },
       {
-        "text": "hello",
         "intent": "greet",
-        "entities": []
+        "entities": [],
+        "text": "hello"
       },
       {
-        "text": "稍等",
         "intent": "greet",
-        "entities": []
+        "entities": [],
+        "text": "稍等"
       },
       {
-        "text": "等一下",
         "intent": "greet",
-        "entities": []
+        "entities": [],
+        "text": "等一下"
       },
       {
-        "text": "慢着",
         "intent": "greet",
-        "entities": []
+        "entities": [],
+        "text": "慢着"
       },
       {
-        "text": "谢谢",
         "intent": "thanks",
-        "entities": []
+        "entities": [],
+        "text": "谢谢"
       },
       {
-        "text": "谢谢您",
         "intent": "thanks",
-        "entities": []
+        "entities": [],
+        "text": "谢谢您"
       },
       {
-        "text": "谢谢你",
         "intent": "thanks",
-        "entities": []
+        "entities": [],
+        "text": "谢谢你"
       },
       {
-        "text": "非常感谢",
         "intent": "thanks",
-        "entities": []
+        "entities": [],
+        "text": "非常感谢"
       },
       {
-        "text": "谢谢啊",
         "intent": "thanks",
-        "entities": []
+        "entities": [],
+        "text": "谢谢啊"
       },
       {
-        "text": "谢了",
         "intent": "thanks",
-        "entities": []
+        "entities": [],
+        "text": "谢了"
       },
       {
-        "text": "不要",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不要"
       },
       {
-        "text": "不需要",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不需要"
       },
       {
-        "text": "不要办",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不要办"
       },
       {
-        "text": "不办",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不办"
       },
       {
-        "text": "暂时不要了",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "暂时不要了"
       },
       {
-        "text": "不是",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不是"
       },
       {
-        "text": "有问题",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "有问题"
       },
       {
-        "text": "我再考虑考虑",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "我再考虑考虑"
       },
       {
-        "text": "不好啦",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不好啦"
       },
       {
-        "text": "不行",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不行"
       },
       {
-        "text": "不可以的",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不可以的"
       },
       {
-        "text": "不中",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不中"
       },
       {
-        "text": "不可以",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不可以"
       },
       {
-        "text": "没了",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "没了"
       },
       {
-        "text": "没有了",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "没有了"
       },
       {
-        "text": "不用了",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "不用了"
       },
       {
-        "text": "暂时不用了",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "暂时不用了"
       },
       {
-        "text": "好的没了",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "好的没了"
       },
       {
-        "text": "好不用了",
         "intent": "deny",
-        "entities": []
+        "entities": [],
+        "text": "好不用了"
       },
       {
-        "text": "",
         "intent": "unknown_intent",
-        "entities": []
+        "entities": [],
+        "text": ""
       },
       {
-        "text": "\n",
         "intent": "unknown_intent",
-        "entities": []
+        "entities": [],
+        "text": "\n"
       }
-    ]
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
   }
 }

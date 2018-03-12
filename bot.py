@@ -12,6 +12,7 @@ from rasa_core.actions import Action
 from rasa_core.agent import Agent
 from rasa_core.channels.console import ConsoleInputChannel
 from rasa_core.events import SlotSet
+from rasa_core.events import Restarted
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
@@ -60,6 +61,13 @@ class ActionLogDateConsume(Action):
         else:
             dispatcher.utter_message("您好,您是要查询日志吗?".format(date))
         return []
+
+class ActionFinishConversation(Action):
+    def name(self):
+        return 'action_finish_conversation'
+
+    def run(self, dispatcher, tracker, domain):
+        return [Restarted('reset_slots')]
 
 
 class MobilePolicy(KerasPolicy):
